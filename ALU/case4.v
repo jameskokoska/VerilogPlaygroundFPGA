@@ -16,8 +16,9 @@ module exact1or2(A,B,C);
 endmodule
 
 
-module case4(SW, ALUOut);
+module case4(SW, B, ALUOut);
 	input [7:0]SW;
+	input [3:0]B;
 	output [7:0]ALUOut;
 	
 	exact1or2 C4(.A(SW[3:0]), .B(SW[7:4]), .C(ALUOut));

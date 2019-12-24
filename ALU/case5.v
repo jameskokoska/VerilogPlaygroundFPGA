@@ -7,9 +7,10 @@ module displaySwitch(A,B,C);
 endmodule
 
 
-module case5(SW, ALUOut);
+module case5(SW, B, ALUOut);
 	input [7:0]SW;
+	input [7:0]B;
 	output [7:0]ALUOut;
 	
-	displaySwitch C5(.A(SW[3:0]), .B(SW[7:4]), .C(ALUOut));
+	displaySwitch C5(.A(SW[3:0]), .B(B[3:0]), .C(ALUOut));
 endmodule
