@@ -32,7 +32,7 @@ module V7404 (input pin1, pin3, pin5, pin9, pin11, pin13, output pin2, pin4, pin
 	
 endmodule
 
-module muxGates(SW, LEDR);
+module muxGateLevel(SW, LEDR);
 	input [2:0] SW;
 	output [9:0] LEDR;
 	wire w1, w2, w3;
