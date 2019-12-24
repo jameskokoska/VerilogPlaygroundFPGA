@@ -7,7 +7,7 @@
 * A simple 2 to 1 mux created with verilog and a 2 to 1 mux created with individual gates
 ## muxGateLevel.v
 * A simple 2 to 1 mux created using gate level modules in verilog
-# seg7Display.v
+## seg7Display.v
 * A simple 7 segment display module that outputs necesarry signals to display numbers given a 4 bit binary number
 ## caseStatement.v
 * A simple 6 to 1 mux using case statements
@@ -30,3 +30,12 @@
 * A simple counter using an always block capable of counting at variable speeds based on a 50Mhz clock cycle input
 ## morseCode.v
 * Flashes the pattern of the selected letter into an LED in morse code
+## detectPatternOut.v
+* Detects the pattern 1101 across four consecutive clock pulses using an FSM implementation in Verilog
+* Supports overlapping sequences
+## operations.v
+* Controls the datapath so that the following computation is performed: `Ax^2 + Bx + C`
+## /RAM/ram.v
+* Creates a 32 x 4 RAM embedded memory module within the FPGA, can read and write from specific addresses
+## /VGAbox/drawBox.v
+* Draws a box of 4x4 pixels of a specified colour at a specified position on a VGA display using the VGA adapter module
